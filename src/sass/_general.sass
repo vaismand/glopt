@@ -40,32 +40,6 @@ header
                     padding-right: 0
                 a:nth-child(1)
                     padding-left: 0
-            .contact
-                text-align: right
-                margin-top: 48px
-                margin-right: 19px    
-                p 
-                    color: #ffffff
-                    font-size: 14px
-                    font-weight: 300 
-                    line-height: 9px  
-                span 
-                    color: #ffffff
-                    font-size: 19px
-                    font-weight: 700
-                    line-height: 1px
-            button 
-                width: 160px
-                height: 45px
-                margin-top: 44px
-                background-color: #ec644b
-                border-radius: 20px
-                color: #ffffff
-                font-size: 12px
-                font-weight: 400
-                line-height: 22.04px
-                text-transform: uppercase
-                border: none
 .first
     padding: 132px 0 82px 0
     min-height: 700px
@@ -88,7 +62,7 @@ header
         font-size: 42px
         text-transform: uppercase
         text-align: center
-    .divider
+    &_divider
         width: 810px
         display: flex
         flex-direction: row
@@ -186,49 +160,16 @@ header
         justify-content: space-between
         margin-top: 37px
         &_item 
-            width: 360px
-            .work_title
-                color: #ec644b
-                font-size: 18px
-                font-weight: 700
-                text-align: center
-                margin-top: 28px
-            .work_text
-                color: #3a3a3a
-                font-size: 14px
-                font-weight: 300
-                line-height: 22px
-                text-align: center
-                margin-top: 10px
+            width: 360px 
 .china_agent
     background: url("../img/bg2.jpg") center center/cover no-repeat
     height: 342px
     padding: 58px 0 75px 0
-    img
-        display: block
-        margin: 0 auto
-        width: 102px
-        height: 102px
-        margin-bottom: 20px
-    h1 
-        color: #ffffff
-        font-size: 26px
-        font-weight: 700
-        text-align: center
-        margin-bottom: 22px
-    h2 
-        display: block
-        width: 984px
-        color: #ffffff
-        font-size: 19px
-        font-weight: 300
-        line-height: 27px
-        text-align: center
-        margin: 0 auto
 .prices
     height: 952px
     padding: 52px 0 80px 0
     &_list 
+        width: 1140px
         display: flex
         flex-direction: row
         justify-content: space-between
@@ -282,9 +223,245 @@ header
                 border: none
                 bottom: 22px
                 left: 53px
+                color: #ffffff
+                font-size: 12px
+                font-weight: 400
+                line-height: 22.04px
+                text-transform: uppercase
     h3 
         color: #3a3a3a
         font-size: 28px
         font-weight: 400
         line-height: 23px
         text-align: center
+        margin-top: 56px
+    .order
+        position: relative
+        width: 1140px
+        height: 166px
+        border-right: solid 1px #898989
+        border-left: solid 1px #898989
+        margin-top: 71px
+        padding-top: 65px
+        &_img
+            display: block
+            position: absolute
+            left: 45.5%
+            top: -28%
+        &:before
+            content: ""
+            display: block
+            position: absolute
+            top: 0
+            width: 500px
+            height: 1px
+            background-color: #898989
+            line-height: 20px
+        &:after
+            content: ""
+            display: block
+            position: absolute
+            top: 0
+            right: 0
+            width: 500px
+            height: 1px
+            background-color: #898989
+            line-height: 20px
+        &_forms
+            width: 824px
+            display: flex
+            justify-content: space-around
+            margin: 0 auto
+            input 
+                width: 268px
+                height: 45px
+                border: solid 1px #898989
+                border-radius: 20px
+                padding-left: 15px
+        &_button
+            display: block
+            position: absolute
+            left: 42%
+            bottom: -14% 
+            width: 180px
+            height: 45px
+            background-color: #ec644b
+            border-radius: 30px
+            border: none
+            color: #ffffff
+            font-size: 12px
+            font-weight: 400
+            line-height: 22.04px
+            text-transform: uppercase
+            &:before
+                content: ""
+                display: block
+                position: absolute
+                bottom: 50%
+                left: 110%
+                width: 463px
+                height: 0.5px
+                background-color: #898989
+                line-height: 20px
+            &:after
+                content: ""
+                display: block
+                position: absolute
+                bottom: 50%
+                right: 109%
+                width: 463px
+                height: 0.5px
+                background-color: #898989
+                line-height: 20px
+.managers
+    background: url("../img/bg3.png") center center/cover no-repeat
+    height: 342px
+    padding: 58px 0 75px 0
+.scheme
+    height: 584px
+    background-color: #f3f3f3
+    padding: 51px 0 46px 0
+    &_list
+        wid
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: center
+        &_item
+            width: 247px
+            margin-right: 36px
+            img 
+                display: block
+                margin: 0 auto
+            .item_title
+                margin-top: 12px
+            .item_text
+                margin-top: 6px
+.contacts
+    height: 438px
+    background: url("../img/bg4.jpg") center center/cover no-repeat
+    background-color: #414141
+    padding: 62px 0 79px 0
+    &_form
+        position: relative
+        display: block
+        margin: 0 auto
+        width: 896px
+        height: 297px
+        &_item
+            display: flex
+            justify-content: space-around
+            margin: 0 auto
+            margin-top: 18px
+        input 
+            width: 268px
+            height: 45px
+            border: solid 1px #898989
+            border-radius: 20px
+            padding-left: 15px 
+    &_title
+        color: #ffffff
+        font-size: 19px
+        font-weight: 700
+        text-transform: uppercase
+        text-align: center
+        line-height: 20px
+        height: 68px
+        background-color: #25333c
+        padding-top: 20px
+        span 
+            color: #ffffff
+            font-size: 14px
+            font-weight: 400
+            text-transform: uppercase
+            text-align: center
+    .message 
+        display: block
+        margin: 0 auto
+        margin-top: 8px
+        width: 813px
+        height: 71px
+        border: 1px solid rgba(0, 0, 0, 0.21)
+        background-color: #ffffff
+        border-radius: 10px
+    &_button 
+        display: block
+        margin: 0 auto
+        margin-top: 17px
+        width: 180px
+        height: 45px
+        background-color: #ec644b
+        border-radius: 30px
+        border: none
+        color: #ffffff
+        font-size: 12px
+        font-weight: 400
+        line-height: 22.04px
+        text-transform: uppercase
+    .contacts_form::after
+        content: ""
+        background: url("../img/bg5.jpg")
+        background-color: #ffffff
+        opacity: 0.7
+        top: 0
+        left: 0
+        bottom: 0
+        right: 0
+        position: absolute
+        z-index: -1
+footer 
+    height: 201px
+    background-color: #25333c
+    padding: 24px 0 28px 0
+    .footer_contact
+        display: flex
+        margin-bottom: 26px
+        img 
+            width: 68px
+            height: 71px
+            margin-right: 43px
+        &_descr 
+            color: #ffffff
+            font-size: 16px
+            font-weight: 700
+            line-height: 20px
+            margin-top: 34px
+            margin-right: 200px
+        .contact
+            margin-top: 18px
+            &_button
+                margin-top: 18px 
+    .footer_rest
+        display: flex
+        &_site
+            opacity: 0.6
+            color: #ffffff
+            font-size: 13px
+            font-weight: 300
+            line-height: 17px
+            margin-top: 32px
+            margin-right: 323px
+        &_policy
+            color: #ec644b
+            font-family: Roboto
+            font-size: 13px
+            font-weight: 300
+            line-height: 17px
+            text-decoration: underline
+            margin-top: 32px
+            margin-right: 456px
+        &_creation
+            opacity: 0.6
+            color: #ffffff
+            font-size: 13px
+            font-weight: 300
+            line-height: 17px
+            margin-top: 32px
+        img 
+            width: 30px
+            height: 32px
+            background-color: #ffffff
+            opacity: 0.78
+            margin-top: 20px
+    
+
