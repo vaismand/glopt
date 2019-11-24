@@ -338,10 +338,17 @@ header
             .item_text
                 margin-top: 6px
 .contacts
+    position: relative
     height: 438px
-    background: url("../img/bg4.jpg") center center/cover no-repeat
-    background-color: #414141
     padding: 62px 0 79px 0
+    &_bg
+        display: block
+        position: absolute
+        background: url("../img/bg4.jpg") center center/cover no-repeat
+        top: 0
+        width: 100%
+        height: 100%
+        z-index: -2    
     &_form
         position: relative
         display: block
@@ -369,6 +376,7 @@ header
         height: 68px
         background-color: #25333c
         padding-top: 20px
+        z-index: 4
         span 
             color: #ffffff
             font-size: 14px
@@ -400,15 +408,50 @@ header
         text-transform: uppercase
     .contacts_form::after
         content: ""
-        background: url("../img/bg5.jpg")
+        display: block
+        background: url("../img/bg5.jpg") center center/cover no-repeat
         background-color: #ffffff
         opacity: 0.7
+        width: 100%
+        height: 100%
         top: 0
-        left: 0
-        bottom: 0
-        right: 0
         position: absolute
         z-index: -1
+.map
+    position: relative
+    iframe 
+        width: 100%
+        height: 500px
+    img 
+        display: block
+        width: 51px
+        height: 53px
+        position: absolute
+        left: 50%
+        top: 50%
+        z-index: 2
+    .adress 
+        display: block
+        padding: 23px 50px
+        width: 329px
+        height: 158px
+        background: url("../icons/adress.png") center center/cover no-repeat
+        position: absolute
+        left: 53%
+        top: 40%
+        z-index: 2
+        color: #3a3a3a
+        font-family: Roboto
+        font-size: 14px
+        font-weight: 300
+        line-height: 20px
+        span 
+            color: #ec644b
+            font-size: 16px
+            font-weight: 700
+        a 
+            color: #ec644b
+            font-weight: 300
 footer 
     height: 201px
     background-color: #25333c
@@ -457,10 +500,10 @@ footer
             font-weight: 300
             line-height: 17px
             margin-top: 32px
+            margin-right: 10px
         img 
             width: 30px
             height: 32px
-            background-color: #ffffff
             opacity: 0.78
             margin-top: 20px
     
