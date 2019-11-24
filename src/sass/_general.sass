@@ -339,9 +339,8 @@ header
                 margin-top: 6px
 .feedback
     padding: 51px  0 65px 0
-    &_carousel
-        display: block
-        margin: 0 auto
+    &-carousel
+        margin-top: 20px
         img 
             display: block
             margin: 0 auto
@@ -355,14 +354,19 @@ header
             span 
                 font-size: 18px
                 font-weight: 700
-        .slick-center
-            opacity: 0.4
-            width: 400px
-            height: 60%
-        .slick-prev
-            width: 30px
-            height: 30px
-            background-color: black
+        .slick-prev, .slick-next  
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            left: 350px
+            border: none
+            background-color: #fff
+            img 
+                width: 21px
+                height: 40px
+        .slick-next  
+            right: 350px
+            left: auto
 .contacts
     position: relative
     height: 438px
