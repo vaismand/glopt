@@ -1,15 +1,13 @@
 header 
     position: relative
-    
     nav
         position: absolute
         top: 0 
-        height: 130px
+        min-height: 130px
         width: 100%
         .menu
-            width: 1160px
             display: flex
-            flex-direction: space-between
+            justify-content: space-between
             z-index: 5
             img 
                 width: 96px
@@ -40,6 +38,7 @@ header
                     padding-right: 0
                 a:nth-child(1)
                     padding-left: 0
+
 .first
     padding: 132px 0 82px 0
     min-height: 700px
@@ -63,7 +62,7 @@ header
         text-transform: uppercase
         text-align: center
     &_divider
-        width: 810px
+        max-width: 810px
         display: flex
         flex-direction: row
         justify-content: space-around
@@ -116,8 +115,9 @@ header
         font-size: 15px
         font-weight: 700
         text-transform: uppercase
+
 .benefits
-    height: 590px
+    min-height: 590px
     background-color: #f3f3f3
     padding: 58px 0 51px 0
     h1 
@@ -128,7 +128,6 @@ header
         text-align: center
         margin-bottom: 31px
     &_list
-        width: 1100px
         display: flex
         flex-direction: row
         flex-wrap: wrap
@@ -151,25 +150,27 @@ header
                 color: #ec644b
                 font-size: 16px
                 font-weight: 700
+
 .our_work
     padding: 51px 0 57px 0
+    min-height: 500px
     &_list
-        width: 1140px
         display: flex
         flex-direction: row
         justify-content: space-between
         margin-top: 37px
         &_item 
             width: 360px 
+
 .china_agent
     background: url("../img/bg2.jpg") center center/cover no-repeat
     height: 342px
     padding: 58px 0 75px 0
+
 .prices
-    height: 952px
+    min-height: 952px
     padding: 52px 0 80px 0
     &_list 
-        width: 1140px
         display: flex
         flex-direction: row
         justify-content: space-between
@@ -237,7 +238,6 @@ header
         margin-top: 56px
     .order
         position: relative
-        width: 1140px
         height: 166px
         border-right: solid 1px #898989
         border-left: solid 1px #898989
@@ -268,7 +268,7 @@ header
             background-color: #898989
             line-height: 20px
         &_forms
-            width: 824px
+            max-width: 824px
             display: flex
             justify-content: space-around
             margin: 0 auto
@@ -313,12 +313,14 @@ header
                 height: 0.5px
                 background-color: #898989
                 line-height: 20px
+
 .managers
     background: url("../img/bg3.png") center center/cover no-repeat
-    height: 342px
+    min-height: 342px
     padding: 58px 0 75px 0
+
 .scheme
-    height: 584px
+    min-height: 584px
     background-color: #f3f3f3
     padding: 51px 0 46px 0
     &_list
@@ -337,6 +339,7 @@ header
                 margin-top: 12px
             .item_text
                 margin-top: 6px
+
 .feedback
     padding: 51px  0 65px 0
     &-carousel
@@ -344,6 +347,8 @@ header
         img 
             display: block
             margin: 0 auto
+            width: 100px
+            height: 100px
         &_text
             width: 550px
             color: #3a3a3a
@@ -361,15 +366,17 @@ header
             left: 350px
             border: none
             background-color: #fff
+            z-index: 4
             img 
                 width: 21px
                 height: 40px
         .slick-next  
             right: 350px
             left: auto
+
 .contacts
     position: relative
-    height: 438px
+    min-height: 438px
     padding: 62px 0 79px 0
     &_bg
         display: block
@@ -447,6 +454,7 @@ header
         top: 0
         position: absolute
         z-index: -1
+
 .map
     height: 500px
     position: relative
@@ -483,6 +491,7 @@ header
         a 
             color: #ec644b
             font-weight: 300
+
 footer 
     height: 201px
     background-color: #25333c
