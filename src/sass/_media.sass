@@ -1,0 +1,276 @@
+@media ( max-width: 800px  )
+    header
+        nav 
+            .menu
+                img 
+                    margin-right: 10px
+                    height: 50px
+                    width: 45px
+                ul 
+                    margin-right: 10px
+                    margin-top: 40px
+                    padding-left: 0
+                    a 
+                        font-size: 11px
+                        padding: 0 5px
+    .contact
+        margin-top: 33px
+        p 
+            line-height: 1px
+        .number 
+            font-size: 13px
+    .contact_button
+        margin-top: 34px
+        width: 120px
+        height: 35px
+    .first
+        h3 
+            font-size: 15px
+            margin-bottom: 20px
+        h1 
+            font-size: 40px
+        h2 
+            font-size: 20px
+        &_divider
+            width: 610px
+            .dot
+                height: 13px
+        .service
+            &_item
+                width: 170px
+                &_icon
+                    width: 44px
+                    height: 38px
+                &_descr 
+                    font-size: 13px
+        button 
+            width: 180px
+            height: 37px 
+            font-size: 12px
+
+    
+    .benefits
+        h1 
+            font-size: 20px
+        &_list
+            &_item
+                width: 350px
+                margin-right: 20px
+    .our_work
+        padding: 31px 20px 37px 20px
+        &_list 
+            flex-direction: column
+            align-items: center
+            &_item 
+                width: 260px
+                margin-bottom: 35px
+                img 
+                    display: block
+                    margin: 0 auto
+                    width: 90%
+    .item_title
+        margin-top: 12px
+    .title
+        font-size: 23px
+    .subtitle
+        font-size: 18px
+    .title_small
+        font-size: 20px
+    .subtitle_small
+    .prices 
+        padding: 42px 20px 60px 20px
+        &_list
+            flex-wrap: wrap
+            justify-content: space-around
+        .order
+            &_img 
+                width: 70px
+                height: 70px
+                top: -20%
+            &:before 
+                width: 310px
+            &:after 
+                width: 310px
+            &_forms
+                max-width: 624px
+                input 
+                    width: 190px
+            &_button 
+                left: 37%
+                &:before
+                    left: 103.5%
+                    width: 266.5px
+                    height: 1px
+                &:after 
+                    right: 103.5%
+                    width: 260px 
+                    height: 1px
+    .scheme
+        padding: 31px 0 35px 0
+        &_list 
+            &_item
+                margin-bottom: 20px  
+    .feedback
+        &-carousel 
+            .slick-prev
+                left:  250px
+            .slick-next 
+                right: 250px 
+    .contacts 
+        &_form 
+            width: 696px 
+            input 
+                width: 200px
+        .message
+            width: 660px 
+    footer 
+        .footer_contact
+            &_descr 
+                width: 220px
+                font-size: 13px
+                margin-right: 130px
+                margin-top: 10px
+        .footer_rest
+            &_site 
+                margin-top: 15px
+            &_policy 
+                margin-top: 15px
+            &_creation 
+                margin-top: 15px
+            img 
+                margin-top: 6px
+@media ( max-width:525px  )
+    header
+        nav
+            .menu
+                position: fixed
+                flex-direction: column
+                justify-content: center
+                align-items: left
+                top: 0
+                left: -100%
+                width: 55%
+                height: 100vh
+                padding-left: 10px
+                background-color: rgba(0,0,0, .9)
+                transition: 0.6s all
+                font-size: 13px
+                &_item
+                    font-size: 16px
+                    margin-bottom: 30px
+                &_active
+                    left: 0    
+    .hamburger
+        display: block
+        position: absolute
+        right: 20px
+        top: 50%
+        transform: translateY(-50%)
+        width: 26px
+        height: 12px
+        span 
+            display: block 
+            height: 2px
+            width: 100%
+            background-color: #ec644b
+            margin-bottom: 2px
+            transition: 0.5s all
+    .hamburger_active 
+        span 
+            margin-bottom: -2px 
+            &:nth-child(1)
+                transform: translateY(3px) rotate(-45deg)
+            &:nth-child(2)
+                display: none
+            &:nth-child(3)
+                transform: translateY(3px) rotate(45deg) 
+    .first
+        h1 
+            font-size: 30px
+        h2 
+            font-size: 19px
+        .service
+            flex-direction: column
+            align-items: center
+            &_item 
+                margin-bottom: 30px
+                &_descr 
+                    margin-top: 8px
+        &_divider 
+            max-width: 350px
+            .dot
+                height: 13px
+                width: 13px
+            span 
+                width: 156px
+    .title 
+        font-size: 24px
+    .icon
+        width: 82px
+        height: 82px
+    .contacts 
+        &_form
+            width: 370px
+            &_item
+                flex-direction: column
+                align-items: center
+            input 
+                margin-bottom: 15px
+        .message 
+            width: 300px
+            height: 51px
+    .map
+        height: 300px
+        img 
+            display: none
+        .adress 
+            display: none
+    footer 
+        .footer_contact
+            img 
+                margin-right: 70px
+            &_descr 
+                display: none
+        .footer_rest 
+            justify-content: space-between
+    .prices_list_item
+        margin-bottom: 20px
+    .prices_text 
+        margin: 19px 15px 0px 15px
+    .order
+        border: solid 1px #898989
+        padding-top: 30px
+        padding-bottom: 30px
+        .order_img 
+            z-index: 10
+            background-color: white
+            left: 42%
+            top: -14%
+        &:after 
+            display: none
+        &:before 
+            display: none
+        &_forms
+            flex-direction: column
+            align-items: center
+            input 
+                margin-bottom: 10px
+        .order_button
+            left: 27%
+            bottom: -9%
+            &:before 
+                display: none
+            &:after 
+                display: none
+    .feedback-carousel
+        .slick-prev
+            left: 100px
+        .slick-next
+            right: 100px
+
+
+
+    
+
+            
+            
