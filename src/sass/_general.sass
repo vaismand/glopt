@@ -347,29 +347,32 @@ header
         img 
             display: block
             margin: 0 auto
+            margin-bottom: 15px
             width: 100px
             height: 100px
-        &_text
-            width: 550px
-            color: #3a3a3a
-            font-size: 14px
-            font-weight: 300
-            line-height: 22.01px
+        .carousel_inner_text
             text-align: center
+            font-size: 15px
+            max-width: 600px
+            margin: 0 auto
             span 
                 font-size: 18px
                 font-weight: 700
         .slick-prev, .slick-next  
             position: absolute
-            top: 50%
+            top: 30%
             transform: translateY(-50%)
             left: 350px
             border: none
             background-color: #fff
             z-index: 4
             img 
-                width: 21px
+                width: 13px
                 height: 40px
+        .slick-prev:focus
+            outline: none
+        .slick-next:focus
+            outline: none
         .slick-next  
             right: 350px
             left: auto
@@ -467,18 +470,18 @@ header
         width: 51px
         height: 53px
         position: absolute
-        left: 50%
-        top: 50%
+        left: 49%
+        top: 41%
         z-index: 2
     .adress 
         display: block
         padding: 23px 50px
-        width: 329px
-        height: 158px
+        width: 339px
+        height: 168px
         background: url("../icons/adress.png") center center/cover no-repeat
         position: absolute
-        left: 53%
-        top: 40%
+        left: 52%
+        top: 32%
         z-index: 2
         color: #3a3a3a
         font-family: Roboto

@@ -155,16 +155,27 @@
                 background-color: rgba(0,0,0, .9)
                 transition: 0.6s all
                 font-size: 13px
-                &_item
-                    font-size: 16px
-                    margin-bottom: 30px
+                ul 
+                    flex-direction: column
+                    a
+                        font-size: 16px 
+                        margin-bottom: 20px
+                        padding: 0
+                        border: none
+                .contact
+                    margin-right: 0
+                    text-align: left
+                button 
+                    margin-top: 20px
+
+
                 &_active
                     left: 0    
     .hamburger
         display: block
         position: absolute
         right: 20px
-        top: 50%
+        top: 20%
         transform: translateY(-50%)
         width: 26px
         height: 12px
@@ -225,12 +236,21 @@
             display: none
         .adress 
             display: none
+    .scheme_list_item
+        margin-right: 0    
     footer 
         .footer_contact
             img 
                 margin-right: 70px
             &_descr 
                 display: none
+            .contact
+                margin-top: 27px
+                .number
+                    font-size: 9px
+                p 
+                    font-size: 10px
+                    margin-bottom: 5px
         .footer_rest 
             justify-content: space-between
     .prices_list_item
