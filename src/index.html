@@ -29,7 +29,7 @@
                         <p>Have questions?</p>
                         <a href="+79264230100" class="number">+7 (926) 423 01 00</a>
                     </div>
-                    <button class="contact_button">Call Me</button>
+                    <button data-modal="consultation" class="contact_button">Call Me</button>
                 </div> 
                 <div class="hamburger">
                     <span></span>
@@ -67,7 +67,7 @@
                     <div class="service_item_descr">Express delivery 1-2 days from Guangzhou to Moscow from 25 $ / kg</div>
                 </div>
             </div>
-            <button>get calculation</button>
+            <button data-modal="consultation">get calculation</button>
         </div>
     </section>
     <section class="benefits">
@@ -148,28 +148,28 @@
                     <img src="icons/ship.png" alt="ship">
                     <div class="prices_subtitle">Delivery 35-50 days<br><span>from $ 0.3 per 1 kg</span></div>
                     <div class="prices_text">Sea freight from China to Russia in 35 days with customs</div>
-                    <button>Details</button>
+                    <button data-modal="consultation">Details</button>
                 </div>
                 <div class="prices_list_item">
                     <div class="prices_title">Shipping by train</div>
                     <img src="icons/train.png" alt="train">
                     <div class="prices_subtitle">Delivery 15-28 days<br><span>from 1$ per 1 kg</span></div>
                     <div class="prices_text">Railway transportation of goods from China to Russia from 2 weeks with customs</div>
-                    <button>Details</button>
+                    <button data-modal="consultation">Details</button>
                 </div>
                 <div class="prices_list_item">
                     <div class="prices_title">Shipping by car</div>
                     <img src="icons/car.png" alt="car">
                     <div class="prices_subtitle">Delivery 12-20 days<br><span>from 1$ per 1 kg</span></div>
                     <div class="prices_text">Trucking goods from China to Russia from 2 weeks with customs</div>
-                    <button>Details</button>
+                    <button data-modal="consultation">Details</button>
                 </div>
                 <div class="prices_list_item">
                     <div class="prices_title">Shipping by plane</div>
                     <img src="icons/plane.png" alt="plane">
                     <div class="prices_subtitle">Delivery 1-12 days<br><span>from 6$ per 1 kg</span></div>
                     <div class="prices_text">Air cargo from China to Russia up to 2 weeks with customs</div>
-                    <button>Details</button>
+                    <button data-modal="consultation">Details</button>
                 </div>
             </div>
         </div>
@@ -298,18 +298,36 @@
                     <p>Have questions?</p>
                     <a href="+79264230100" class="number">+7 (926) 423 01 00</a>
                 </div>
-                <button class="contact_button">Call Me</button>
+                <button data-modal="consultation" class="contact_button">Call Me</button>
             </div>
             <hr>
             <div class="footer_rest">
                 <div class="footer_rest_site">© 2010 Scratch.com.ua</div>
                 <div class="footer_rest_policy">Privacy policy</div>
-                <div class="footer_rest_creation">Site Creation</div>
-                <img src="icons/footer.png" alt="footer">
+                <div class="footer_rest_creation">
+                    <div class="footer_rest_creation_text">Site creation</div> 
+                    <img src="icons/footer.png" alt="footer">
+                </div>
             </div>
         </div>  
     </footer>
-    <script src="js/jquary.min.js"></script>
+    <div class="overlay">
+        <div class="modal" id="consultation">
+            <div class="modal__close">&times;</div>
+            <div class="consult_form">
+                <div class="consult_title">Have questions?<br><span>contact us</span></div>
+                <div class="consult_form_item">
+                    <input name="name" required placeholder="Name" type="text"> 
+                    <input name="phone" required placeholder="Phone Number"> 
+                    <input name="email" required placeholder="E-mail" type="email">    
+                </div>
+                <input name="text" required placeholder="Message" type="text" class="message">
+                <button class="consult_button">Send Request</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>
 </body>
