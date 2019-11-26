@@ -239,37 +239,20 @@ header
     .order
         position: relative
         min-height: 166px
-        border-right: solid 1px #898989
-        border-left: solid 1px #898989
+        border: solid 1px #898989
         margin-top: 71px
         padding-top: 65px
         &_img
             display: block
+            background-color: #fff
             position: absolute
             left: 45.5%
             top: -28%
-        &:before
-            content: ""
-            display: block
-            position: absolute
-            top: 0
-            width: 500px
-            height: 1px
-            background-color: #898989
-            line-height: 20px
-        &:after
-            content: ""
-            display: block
-            position: absolute
-            top: 0
-            right: 0
-            width: 500px
-            height: 1px
-            background-color: #898989
-            line-height: 20px
+            z-index: 2
         &_forms
             max-width: 824px
             display: flex
+            flex-direction: row
             justify-content: space-around
             margin: 0 auto
             input 
@@ -293,26 +276,7 @@ header
             font-weight: 400
             line-height: 22.04px
             text-transform: uppercase
-            &:before
-                content: ""
-                display: block
-                position: absolute
-                bottom: 50%
-                left: 110%
-                width: 463px
-                height: 0.5px
-                background-color: #898989
-                line-height: 20px
-            &:after
-                content: ""
-                display: block
-                position: absolute
-                bottom: 50%
-                right: 109%
-                width: 463px
-                height: 0.5px
-                background-color: #898989
-                line-height: 20px
+            z-index: 2
 
 .managers
     background: url("../img/bg3.png") center center/cover no-repeat

@@ -5,6 +5,7 @@
     height: 100%
     top: 0
     background-color: rgba(0,0,0, .56)
+    z-index: 4
 
 .modal 
     position: absolute
@@ -22,16 +23,22 @@
         line-height: 21px
         color: #ec644b
         cursor: pointer
+    &__descr 
+        color: #0d0d0d
+        font-size: 14px
+        font-weight: 500
+        text-align: center
     .consult_form
         position: relative
         display: block
         margin: 0 auto
         padding-bottom: 10px
-        width: 896px
+        width: 396px
         min-height: 297px
         &_item
             display: flex
-            justify-content: space-around
+            flex-direction: column
+            align-items: center
             margin: 0 auto
             margin-top: 18px
             input 
@@ -40,6 +47,7 @@
                 border: solid 1px #898989
                 border-radius: 20px
                 padding-left: 15px 
+                margin-bottom: 20px
     .consult_title
         color: #ffffff
         font-size: 19px
@@ -62,8 +70,8 @@
         margin: 0 auto
         margin-top: 8px
         padding-left: 15px
-        width: 813px
-        height: 71px
+        width: 313px
+        height: 91px
         border: 1px solid rgba(0, 0, 0, 0.21)
         background-color: #ffffff
         border-radius: 10px
@@ -92,5 +100,9 @@
         top: 0
         position: absolute
         z-index: -1
-#consultation, #order, #thanks 
+.error 
+    display: block
+    margin-left: 10px
+    color: red
+#consultation, #thanks 
     display: none
