@@ -175,16 +175,18 @@
         </div>
         <h3>Order a free consultation</h3>
         <div class="container">
-            <div class="order">
+            <div class="order" id="order">
                 <span></span>
                 <img src="icons/order.png" alt="order" class="order_img">
                 <span></span>
-                <div class="order_forms">
-                    <input name="name" required placeholder="Name" type="text"> 
-                    <input name="phone" required placeholder="Phone Number"> 
-                    <input name="email" required placeholder="E-mail" type="email">    
-                </div>
-                <button class="order_button">Send Request</button>
+                <form class="order_forms">
+                    <div class="order_forms_item">
+                        <input name="name" required placeholder="Name" type="text"> 
+                        <input name="phone" required placeholder="Phone Number"> 
+                        <input name="email" required placeholder="E-mail" type="email">
+                    </div>  
+                    <button class="order_button">Send Request</button>  
+                </form> 
             </div>
         </div>
     </section>
@@ -266,9 +268,9 @@
             </div>
         </div>
     </section>
-    <section class="contacts">
+    <section class="contacts" id="contact">
         <div class="contacts_bg"></div>
-        <div class="contacts_form">
+        <form class="contacts_form">
             <div class="contacts_title">Have questions?<br><span>contact us</span></div>
             <div class="contacts_form_item">
                 <input name="name" required placeholder="Name" type="text"> 
@@ -277,7 +279,7 @@
             </div>
             <input name="text" required placeholder="Message" type="text" class="message">
             <button class="contacts_button">Send Request</button>
-        </div>
+        </form>
     </section>
     <section class="map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2709.3248843962883!2d37.62443555646165!3d55.74810330392408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54af8f4b2bb81%3A0x1667827ac72a29c7!2sGlobal%20Opt!5e0!3m2!1sen!2sat!4v1574583940529!5m2!1sen!2sat" frameborder="0" style="border:0;" allowfullscreen="">
@@ -314,7 +316,7 @@
     <div class="overlay">
         <div class="modal" id="consultation">
             <div class="modal__close">&times;</div>
-            <div class="consult_form">
+            <form class="consult_form">
                 <div class="consult_title">Have questions?<br><span>contact us</span></div>
                 <div class="consult_form_item">
                     <input name="name" required placeholder="Name" type="text"> 
@@ -323,12 +325,19 @@
                 </div>
                 <input name="text" required placeholder="Message" type="text" class="message">
                 <button class="consult_button">Send Request</button>
-            </div>
+            </d>
+        </div>
+        <div class="modal modal_mini" id="thanks">
+            <div class="consult_close">&times;</div>
+            <div class="consult_subtitle">Thank you for your request</div>
+            <div class="consult_descr">Our representative will contact you soon!</div>
         </div>
     </div>
+
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

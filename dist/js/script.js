@@ -40,5 +40,36 @@ $('[data-modal=consultation]').on('click', function() {
     $('.overlay, #consultation').fadeIn('slow');
 });
 $('.modal__close').on('click', function() {
-    $('.overlay, #consultation, #thanks, #order').fadeOut('slow');
+    $('.overlay, #consultation, #thanks').fadeOut('slow');
 });
+
+function validateForms(form){
+    $(form).validate({
+        rules: {
+            name: {
+                required: true,
+                minlength: 2
+            },
+            phone: "required",
+            email: {
+                required: true,
+                email: true
+            }
+        },
+        messages: {
+            name: {
+                required: "Please, write your name",
+                minlength: jQuery.validator.format("Type {0} symbols!")
+              },
+            phone: "Please write your phone number",
+            email: {
+              required: "Please write your e-mail",
+              email: "Written e-mail is wrong"
+            }
+        }
+    });
+}
+
+validateForms('#contact form');
+validateForms('#consultation form');
+validateForms('#order form');
